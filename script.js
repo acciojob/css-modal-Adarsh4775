@@ -9,7 +9,13 @@ function modelBody(){
 		modal.style.display = "block";
 	});
 
-  
+      modal.addEventListener("click", function(event) {
+		         if( event.target === modal)
+				 {
+					 modal.style.display = "none";
+				 }
+	  });
+
 
 	close.addEventListener("click", function(){
 		modal.style.display = "none";
